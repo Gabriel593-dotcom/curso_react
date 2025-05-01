@@ -1,0 +1,8 @@
+Criando projeto com NPX: 
+	- npx create-react-app meu-app
+
+Criando projeto com NPX sem inicializar o Git: 
+	- npx create-react-app meu-app --skip-git
+
+Criando projeto com vite: 
+	- npm create vite@latest 
