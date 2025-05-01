@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "Curso React"
+		}
+	],
+	"settings": {
+		"editor.tabSize": 2,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"emmet.includeLanguages": {
+		  "javascript": "javascriptreact"
+		},
+		"files.autoSave": "afterDelay",
+		"[javascriptreact]": {
+			"editor.defaultFormatter": "vscode.typescript-language-features"
+		},
+		"[javascript]": {
+			"editor.defaultFormatter": "vscode.typescript-language-features"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"rodrigovallades.es7-react-js-snippets"
+		]
+	}
+}
