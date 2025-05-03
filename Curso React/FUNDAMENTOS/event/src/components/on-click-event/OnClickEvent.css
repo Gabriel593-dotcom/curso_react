@@ -5,3 +5,20 @@
     align-items: center;
     flex-direction: column;
 }
+
+.container .simple-event-click {
+    margin-bottom: 20px;
+}
+
+.container .simple-event-click button {
+    width: 90px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container .simple-render-function {
+    border: 1px black solid;
+    padding-left: 7px;
+    padding-right: 7px;
+}
