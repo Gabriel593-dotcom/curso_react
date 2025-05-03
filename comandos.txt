@@ -5,4 +5,7 @@ Criando projeto com NPX sem inicializar o Git:
 	- npx create-react-app meu-app --skip-git
 
 Criando projeto com vite: 
-	- npm create vite@latest 
+	- npm create vite@latest
+
+Comentar no JSX:
+	- {/*ALGUM TEXTO*/} 
