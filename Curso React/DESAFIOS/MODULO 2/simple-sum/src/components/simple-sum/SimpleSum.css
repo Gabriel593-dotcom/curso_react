@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.container .labels-container {
+    margin-bottom: 20px;
+}
+
+.container button {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container button:hover {
+    border: 2px black solid;
+}
