@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form .label {
+    margin-bottom: 5px;
+}
+.form .input_form {
+    margin-bottom: 10px;
+}
