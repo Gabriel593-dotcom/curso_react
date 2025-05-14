@@ -1,11 +1,20 @@
+import { useState } from "react";
 import formStyle from "./FormularioEx.module.css";
 
 const FormularioEx = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+
+  const handleName = (e) => {
+    let value = e.target.value;
+    setName(value);
+  };
+
   return (
     <div>
       <form className={formStyle.form}>
         <label className={formStyle.label} htmlFor="name">
-          Name:{" "}
+          Name:
         </label>
 
         <input
@@ -13,6 +22,7 @@ const FormularioEx = () => {
           type="text"
           name="name"
           placeholder="Text your name"
+          onChange={handleName}
         />
 
         {/*LABEL ENVOLVENDO INPUT*/}
