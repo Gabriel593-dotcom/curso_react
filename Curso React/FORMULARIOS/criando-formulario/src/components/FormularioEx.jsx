@@ -28,7 +28,12 @@ const FormularioEx = () => {
         {/*LABEL ENVOLVENDO INPUT*/}
         <label className={formStyle.label_f}>
           <span>Email: </span>
-          <input type="text" name="email" placeholder="Text your email" />
+          <input
+            type="text"
+            name="email"
+            placeholder="Text your email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </label>
 
         <input className={formStyle.input_form} type="submit" value="Enviar" />
