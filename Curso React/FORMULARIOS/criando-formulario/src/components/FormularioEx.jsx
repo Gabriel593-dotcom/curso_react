@@ -15,6 +15,12 @@ const FormularioEx = () => {
           placeholder="Text your name"
         />
 
+        {/*LABEL ENVOLVENDO INPUT*/}
+        <label className={formStyle.label_f}>
+          <span>Email: </span>
+          <input type="text" name="email" placeholder="Text your email" />
+        </label>
+
         <input className={formStyle.input_form} type="submit" value="Enviar" />
       </form>
     </div>

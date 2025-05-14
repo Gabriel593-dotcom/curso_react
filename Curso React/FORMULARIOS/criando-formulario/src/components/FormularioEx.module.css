@@ -8,6 +8,22 @@
 .form .label {
     margin-bottom: 5px;
 }
+
+.form .label_f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .label_f span {
+    margin-bottom: 5px;
+}
+
+.form .label_f input {
+    margin-bottom: 10px;
+}
+
 .form .input_form {
     margin-bottom: 10px;
 }
