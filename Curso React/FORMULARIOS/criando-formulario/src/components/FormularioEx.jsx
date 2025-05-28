@@ -5,6 +5,7 @@ const FormularioEx = ({ user }) => {
   const [name, setName] = useState(user?.name ?? "");
   const [email, setEmail] = useState(user?.email ?? "");
   const [bio, setBio] = useState();
+  const [role, setRole] = useState();
 
   const handleName = (e) => {
     let value = e.target.value;
@@ -13,11 +14,21 @@ const FormularioEx = ({ user }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("Enviando o Formulario " + name + " - " + email + " - " + bio);
+    alert(
+      "Enviando o Formulario " +
+        name +
+        " - " +
+        email +
+        " - " +
+        bio +
+        " - " +
+        role
+    );
 
     setName("");
     setEmail("");
     setBio("");
+    setRole("");
   };
 
   return (
@@ -56,6 +67,19 @@ const FormularioEx = ({ user }) => {
             onChange={(e) => setBio(e.target.value)}
             value={bio}
           ></textarea>
+        </label>
+
+        <label className={formStyle.label_f}>
+          <span>Função do Sistema</span>
+          <select
+            name="role"
+            onChange={(e) => setRole(e.target.value)}
+            value={role}
+          >
+            <option value="user">Usuário</option>
+            <option value="editor">Editor</option>
+            <option value="adm">Administrador</option>
+          </select>
         </label>
 
         <input className={formStyle.input_form} type="submit" value="Enviar" />

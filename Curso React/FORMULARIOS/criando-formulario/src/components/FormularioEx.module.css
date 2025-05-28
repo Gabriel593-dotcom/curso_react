@@ -28,6 +28,10 @@
     margin-bottom: 10px;
 }
 
+.form .label_f select {
+    margin-bottom: 15px;
+}
+
 .form .input_form {
     margin-bottom: 10px;
 }
