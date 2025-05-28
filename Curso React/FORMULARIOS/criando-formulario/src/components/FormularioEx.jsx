@@ -13,6 +13,9 @@ const FormularioEx = ({ user }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Enviando o Formulario " + name + " - " + email);
+
+    setName("");
+    setEmail("");
   };
 
   return (
