@@ -10,9 +10,14 @@ const FormularioEx = () => {
     setName(value);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert("Enviando o Formulario " + name + " - " + email);
+  };
+
   return (
     <div>
-      <form className={formStyle.form}>
+      <form className={formStyle.form} onSubmit={handleSubmit}>
         <label className={formStyle.label} htmlFor="name">
           Name:
         </label>
