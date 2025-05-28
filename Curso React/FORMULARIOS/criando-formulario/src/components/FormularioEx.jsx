@@ -1,9 +1,9 @@
 import { useState } from "react";
 import formStyle from "./FormularioEx.module.css";
 
-const FormularioEx = () => {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
+const FormularioEx = ({ user }) => {
+  const [name, setName] = useState(user?.name ?? "");
+  const [email, setEmail] = useState(user?.email ?? "");
 
   const handleName = (e) => {
     let value = e.target.value;
@@ -28,6 +28,7 @@ const FormularioEx = () => {
           name="name"
           placeholder="Text your name"
           onChange={handleName}
+          value={name}
         />
 
         {/*LABEL ENVOLVENDO INPUT*/}
@@ -38,6 +39,7 @@ const FormularioEx = () => {
             name="email"
             placeholder="Text your email"
             onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
         </label>
 
