@@ -59,6 +59,21 @@
       "id": "845a",
       "name": "pc gamer high-end",
       "price": "16000"
+    },
+    {
+      "id": "1197",
+      "name": "suport monitor ELG",
+      "price": "160"
+    },
+    {
+      "id": "91f1",
+      "name": "suporte monitor duplor ELG",
+      "price": "240"
+    },
+    {
+      "id": "cd82",
+      "name": "ASTRO 50",
+      "price": "1350"
     }
   ]
 }

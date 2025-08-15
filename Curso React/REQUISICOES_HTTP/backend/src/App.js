@@ -19,7 +19,7 @@ function App() {
   //   fetchProducts();
   // }, []);
 
-  const { data: items, httpConfig } = useFetch(baseUrl);
+  const { data: items, httpConfig, loading } = useFetch(baseUrl);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -46,13 +46,16 @@ function App() {
   return (
     <div className="App">
       <h1>Products List</h1>
-      <ul>
-        {items && items.map((product) => (
-          <li key={product.id}>
-            {product.name} - {product.price}
-          </li>
-        ))}
-      </ul>
+      {loading && <p>Carregando produtos...</p>}
+      {!loading &&
+        <ul className="product-list">
+          {items && items.map((product) => (
+            <li key={product.id}>
+              {product.name} - {product.price}
+            </li>
+          ))}
+        </ul>
+      }
       <div className="add-product">
         <form onSubmit={handleSubmit}>
           <label>
