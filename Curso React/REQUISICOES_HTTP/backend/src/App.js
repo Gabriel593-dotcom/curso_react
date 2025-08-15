@@ -30,6 +30,12 @@ function App() {
       },
       body: JSON.stringify(product),
     });
+
+    const addedProduct = await response.json();
+
+    setProducts((prev) => [...prev, addedProduct]);
+    setName("");
+    setPrice("");
   };
 
   return (
