@@ -29,6 +29,36 @@
       "id": "df3e",
       "name": "nitendo switch",
       "price": "1300"
+    },
+    {
+      "id": "6552",
+      "name": "ps4",
+      "price": "1250.78"
+    },
+    {
+      "id": "76a1",
+      "name": "ps5",
+      "price": "3700"
+    },
+    {
+      "id": "d9e5",
+      "name": "xbox series",
+      "price": "2000"
+    },
+    {
+      "id": "1665",
+      "name": "pc escritório",
+      "price": "3500"
+    },
+    {
+      "id": "b492",
+      "name": "pc gamer mid-end",
+      "price": "6300"
+    },
+    {
+      "id": "845a",
+      "name": "pc gamer high-end",
+      "price": "16000"
     }
   ]
 }

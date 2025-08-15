@@ -19,24 +19,26 @@ function App() {
   //   fetchProducts();
   // }, []);
 
-  const { data: items } = useFetch(baseUrl);
+  const { data: items, httpConfig } = useFetch(baseUrl);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     const product = { name, price };
 
-    const response = await fetch(baseUrl, {
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(product),
-    });
+    // const response = await fetch(baseUrl, {
+    //   method: 'POST',
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(product),
+    // });
 
-    const addedProduct = await response.json();
+    // const addedProduct = await response.json();
 
-    setProducts((prev) => [...prev, addedProduct]);
+    // setProducts((prev) => [...prev, addedProduct]);
+
+    httpConfig(product, "POST");
     setName("");
     setPrice("");
   };
