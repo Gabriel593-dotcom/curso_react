@@ -1,24 +1,39 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Camisa",
-            "price": 59.9
-        },
-        {
-            "id": 2,
-            "name": "Calça",
-            "price": 89.9
-        },
-        {
-            "id": 3,
-            "name": "Tênis",
-            "price": 199.9
-        },
-        {
-            "id": 4,
-            "name": "Jaqueta",
-            "price": 129.9
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça",
+      "price": 89.9
+    },
+    {
+      "id": "3",
+      "name": "Tênis",
+      "price": 199.9
+    },
+    {
+      "id": "4",
+      "name": "Jaqueta",
+      "price": 129.9
+    },
+    {
+      "id": "df68",
+      "name": "pinto",
+      "price": "12200"
+    },
+    {
+      "id": "4062",
+      "name": "capa de chuva",
+      "price": "60"
+    },
+    {
+      "id": "0992",
+      "name": "Gabriel",
+      "price": "9"
+    }
+  ]
 }
